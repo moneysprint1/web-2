@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Library Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-book-skull"></i>
+            <h1>Library<span></span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#login" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome, <span>Librarian</span>.</h2>
+            <p>Manage your school library like a <strong>Final Boss</strong>.</p>
+            <a href="#login" class="btn-primary">Begin Challenge</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x300?text=Library+Boss" alt="Library Management">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>⚔️ <span>System Features</span></h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>User Management</h3>
+                <p>Track students, teachers, and admins.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-book"></i>
+                <h3>Book Inventory</h3>
+                <p>Add, search, and manage books.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Loan System</h3>
+                <p>Automated due dates & penalties.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Analytics</h3>
+                <p>Track borrowing trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section id="dashboard" class="dashboard-preview">
+        <h2>📊 <span>Admin Dashboard</span></h2>
+        <div class="dashboard-mockup">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Total Books</h3>
+                    <p id="total-books">1,024</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Loans</h3>
+                    <p id="active-loans">287</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Overdue</h3>
+                    <p id="overdue-books">42</p>
+                </div>
+            </div>
+            <div class="chart-placeholder">
+                <canvas id="bookChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Access Restricted</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn-primary">Enter</button>
+            </form>
+            <p class="error-message" id="login-error"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 <strong>Library</strong> |  Library Management System | Designed by Kunal Mistry</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
